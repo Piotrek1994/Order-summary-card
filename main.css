@@ -4,7 +4,6 @@
 	padding: 0;
 }
 
-
 body {
 	background-color: hsl(225, 100%, 98%);
 	font-family: 'Red Hat Display', sans-serif;
@@ -97,16 +96,13 @@ img {
 
 .change {
 	font-size: 14px;
-    cursor: pointer;
+	cursor: pointer;
 }
 .change:hover {
-    text-decoration: none;
-    font-weight: bold;
-    color: #766cf1;
+	text-decoration: none;
+	font-weight: bold;
+	color: #766cf1;
 }
-
-
-
 
 .annual {
 	font-weight: bold;
@@ -121,40 +117,35 @@ img {
 
 .proceed-payment {
 	width: 100%;
-    height: 41px;
-    margin-top: 20px;
-    font-weight: bold;
-    border: none;
-    border-radius: 7px;
-    background:  hsl(245, 75%, 52%);
-    color: white;
-    cursor: pointer;
+	height: 41px;
+	margin-top: 20px;
+	font-weight: bold;
+	border: none;
+	border-radius: 7px;
+	background: hsl(245, 75%, 52%);
+	color: white;
+	cursor: pointer;
 }
 
 .proceed-payment:hover {
-    background-color: #766cf1;
+	background-color: #766cf1;
 }
 
 .cancel-order {
 	width: 100%;
-    height: 41px;
-    margin-top: 10px;
-    font-weight: bold;
-    border: none;
-    border-radius: 7px;
-    color: hsl(224, 23%, 55%);
-    background-color: transparent;
-    cursor: pointer;
+	height: 41px;
+	margin-top: 10px;
+	font-weight: bold;
+	border: none;
+	border-radius: 7px;
+	color: hsl(224, 23%, 55%);
+	background-color: transparent;
+	cursor: pointer;
 }
-
-
 
 .cancel-order:hover {
-    color: black;
+	color: black;
 }
-
-
-
 
 section {
 	position: relative;
@@ -197,10 +188,40 @@ section {
 	z-index: -1;
 }
 
-
 @media (max-width: 375px) {
-    .card {
-        height: 100vh;
-    }
+	.card {
+		/* height: 80vh; */
+		width: 340px;
+	}
 }
 
+@media (max-width: 320px) {
+	.card {
+		height: 500px;
+		width: 300px;
+	}
+	.bottom-card {
+		padding: 0;
+		margin: 10px;
+	}
+	.top-card {
+		height: 30%;
+	}
+}
+
+@media (max-width: 280px) {
+	.card {
+		height: 460px;
+		width: 250px;
+	}
+	.bottom-card {
+		padding: 0;
+		margin: 10px;
+	}
+	.top-card {
+		height: 23%;
+	}
+	.text {
+		margin: 2px;
+	}
+}
