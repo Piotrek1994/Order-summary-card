@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+    background: #3c31dd;
+
+} */
+
+body {
+	background-color: hsl(225, 100%, 98%);
+}
+
+.wrapper {
+	max-width: 1440px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.card {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+}
+
+section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 400px;
+	padding-top: 100px;
+	background: hsl(225, 100%, 94%);
+}
+
+.curve {
+	position: absolute;
+	height: 250px;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+
+.curve::before {
+	content: '';
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	width: 55%;
+	height: 100%;
+	transform: translate(85%, 60%);
+	background-color: hsl(225, 100%, 98%);
+}
+
+.curve::after {
+	content: '';
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	width: 55%;
+	height: 100%;
+	background-color: hsl(225, 100%, 94%);
+	transform: translate(-4%, 40%);
+	z-index: -1;
+}
