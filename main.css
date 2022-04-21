@@ -17,6 +17,7 @@
 
 body {
 	background-color: hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .wrapper {
@@ -26,14 +27,63 @@ body {
 }
 
 .card {
-    position: absolute;
-    width: 60px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: red;
+	position: absolute;
+	width: 370px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	border-radius: 20px;
+	transform: translate(-50%, -50%);
+	background-color: white;
+    overflow: hidden;
 }
+
+.top-card {
+    height: 35%;
+	background-image: url('/images/illustration-hero.svg');
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+.bottom-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+.heading {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    margin: 0 30px;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: rgb(151, 149, 149);
+}
+
+
+
 
 section {
 	position: relative;
